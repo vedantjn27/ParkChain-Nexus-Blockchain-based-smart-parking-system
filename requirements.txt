@@ -1,0 +1,3 @@
+# Root convenience file for Python dependency installation.
+# The frontend and contracts use their own package.json files.
+-r backend/requirements.txt

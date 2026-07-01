@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments and secrets
+backend/.venv/
+backend/.env
+
+# Local SQLite databases
+*.db
+*.db-*
+
+# Runtime logs
+*.log
+*.err.log
+
+# Frontend dependencies/build outputs
+frontend/node_modules/
+frontend/dist/
