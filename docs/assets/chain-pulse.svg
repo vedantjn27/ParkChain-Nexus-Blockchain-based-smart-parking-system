@@ -1,0 +1,94 @@
+<svg width="1080" height="430" viewBox="0 0 1080 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#07111f"/>
+      <stop offset="1" stop-color="#0c1828"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#38bdf8"/>
+      <stop offset=".5" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <style>
+      .label { font: 800 18px Inter, Segoe UI, Arial, sans-serif; fill: #e5f6ff; }
+      .small { font: 600 13px Inter, Segoe UI, Arial, sans-serif; fill: #9cc7dc; }
+      .tiny { font: 700 11px Inter, Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 1px; }
+      .dash { stroke-dasharray: 18 16; animation: move 2.2s linear infinite; }
+      .tx { animation: tx 5s ease-in-out infinite; }
+      .tx2 { animation: tx 5s ease-in-out infinite; animation-delay: 1.2s; }
+      .tx3 { animation: tx 5s ease-in-out infinite; animation-delay: 2.4s; }
+      .mine { animation: mine 2.6s ease-in-out infinite; transform-origin: center; }
+      .block { animation: glow 3.2s ease-in-out infinite; }
+      @keyframes move { to { stroke-dashoffset: -68; } }
+      @keyframes tx {
+        0% { transform: translate(105px, 95px) scale(.72); opacity: 0; }
+        16% { opacity: 1; }
+        42% { transform: translate(365px, 95px) scale(1); opacity: 1; }
+        68% { transform: translate(610px, 95px) scale(.9); opacity: 1; }
+        100% { transform: translate(815px, 95px) scale(.75); opacity: 0; }
+      }
+      @keyframes mine { 0%,100% { transform: scale(.96); opacity: .72; } 50% { transform: scale(1.06); opacity: 1; } }
+      @keyframes glow { 0%,100% { filter: brightness(1); } 50% { filter: brightness(1.35); } }
+    </style>
+  </defs>
+
+  <rect width="1080" height="430" rx="26" fill="#020617"/>
+  <rect x="28" y="28" width="1024" height="374" rx="24" fill="url(#panel)" stroke="#1e3a5f"/>
+
+  <text x="62" y="76" class="tiny">LIVE BLOCKCHAIN PULSE</text>
+
+  <g transform="translate(60 118)">
+    <rect width="190" height="180" rx="18" fill="#05101d" stroke="#164e63"/>
+    <text x="34" y="44" class="label">Mempool</text>
+    <text x="34" y="70" class="small">pending actions</text>
+    <circle cx="54" cy="118" r="9" fill="#38bdf8"/>
+    <circle cx="94" cy="138" r="7" fill="#22c55e"/>
+    <circle cx="130" cy="112" r="8" fill="#facc15"/>
+  </g>
+
+  <g transform="translate(325 118)">
+    <rect width="210" height="180" rx="18" fill="#05101d" stroke="#155e75"/>
+    <text x="34" y="44" class="label">Block Assembly</text>
+    <text x="34" y="70" class="small">events are bundled</text>
+    <g class="mine">
+      <polygon points="105,92 145,116 145,162 105,186 65,162 65,116" fill="#0f766e" stroke="#5eead4" stroke-width="3"/>
+      <text x="86" y="146" fill="#ecfeff" font-family="Inter, Arial" font-size="18" font-weight="900">#</text>
+      <text x="108" y="146" fill="#ecfeff" font-family="Inter, Arial" font-size="18" font-weight="900">6</text>
+    </g>
+  </g>
+
+  <g transform="translate(610 118)">
+    <rect width="210" height="180" rx="18" fill="#05101d" stroke="#166534"/>
+    <text x="34" y="44" class="label">Confirmed</text>
+    <text x="34" y="70" class="small">Polygonscan proof</text>
+    <rect class="block" x="54" y="104" width="104" height="64" rx="14" fill="#052e16" stroke="#86efac" stroke-width="3"/>
+    <text x="76" y="141" fill="#dcfce7" font-family="Inter, Arial" font-size="16" font-weight="900">0x1852</text>
+  </g>
+
+  <g transform="translate(875 118)">
+    <rect width="130" height="180" rx="18" fill="#05101d" stroke="#854d0e"/>
+    <text x="27" y="44" class="label">Chain</text>
+    <text x="27" y="70" class="small">timeline</text>
+    <rect x="34" y="102" width="62" height="42" rx="10" fill="#422006" stroke="#fde047"/>
+    <rect x="48" y="154" width="62" height="42" rx="10" fill="#422006" stroke="#fde047"/>
+  </g>
+
+  <path class="dash" d="M250 208 H325" stroke="url(#line)" stroke-width="5" fill="none"/>
+  <path class="dash" d="M535 208 H610" stroke="url(#line)" stroke-width="5" fill="none"/>
+  <path class="dash" d="M820 208 H875" stroke="url(#line)" stroke-width="5" fill="none"/>
+
+  <g class="tx">
+    <circle r="13" fill="#38bdf8"/>
+    <text x="-5" y="5" fill="#00111a" font-family="Inter, Arial" font-size="13" font-weight="900">tx</text>
+  </g>
+  <g class="tx2">
+    <circle r="13" fill="#22c55e"/>
+    <text x="-5" y="5" fill="#02140a" font-family="Inter, Arial" font-size="13" font-weight="900">tx</text>
+  </g>
+  <g class="tx3">
+    <circle r="13" fill="#facc15"/>
+    <text x="-5" y="5" fill="#1b1300" font-family="Inter, Arial" font-size="13" font-weight="900">tx</text>
+  </g>
+
+  <text x="62" y="360" class="small">Reservation, entry, AI pricing, escrow, SBT, and green-credit events move from pending intent to confirmed proof.</text>
+</svg>

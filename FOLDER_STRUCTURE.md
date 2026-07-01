@@ -13,6 +13,7 @@ ParkChain Nexus - Blockchain based smart parking system/
   ParkChain-Nexus-Implementation-Spec.md
   MANUAL_FRONTEND_BACKEND_TEST_WORKFLOW.md
   PARKCHAIN_FEATURE_SIGNIFICANCE_EXPLAINER.md
+  docs/
   backend/
   frontend/
   contracts/
@@ -27,6 +28,23 @@ ParkChain Nexus - Blockchain based smart parking system/
 | `ParkChain-Nexus-Implementation-Spec.md` | Original implementation plan and product specification |
 | `MANUAL_FRONTEND_BACKEND_TEST_WORKFLOW.md` | Manual test and demo script |
 | `PARKCHAIN_FEATURE_SIGNIFICANCE_EXPLAINER.md` | Simple-language explanation of features and blockchain terms |
+| `docs/assets/` | Animated SVG assets and future demo media used by the README |
+
+## Documentation Assets
+
+```text
+docs/
+  assets/
+    parkchain-hero.svg
+    chain-pulse.svg
+    section-spark.svg
+```
+
+| Asset | Purpose |
+|---|---|
+| `parkchain-hero.svg` | Animated README hero banner |
+| `chain-pulse.svg` | Animated blockchain motion preview |
+| `section-spark.svg` | Animated section divider for README headings |
 
 ## Backend
 

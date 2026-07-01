@@ -1,7 +1,5 @@
-# ParkChain Nexus
-
 <p align="center">
-  <strong>Every Spot. Every Second. Provably Honest.</strong>
+  <img src="./docs/assets/parkchain-hero.svg" alt="ParkChain Nexus animated hero banner">
 </p>
 
 <p align="center">
@@ -19,7 +17,18 @@
 
 ---
 
+<p align="center">
+  <a href="#problem-statement">Problem</a> |
+  <a href="#solution-overview">Solution</a> |
+  <a href="#feature-set">Features</a> |
+  <a href="#architecture-diagram">Architecture</a> |
+  <a href="#animated-demo-layer">Animations</a> |
+  <a href="#quick-start">Quick Start</a>
+</p>
+
 ## Problem Statement
+
+<img src="./docs/assets/section-spark.svg" alt="">
 
 Parking systems are still built around private databases that drivers and parking owners must simply trust. A driver cannot easily prove that a slot was truly reserved, that the booking was not overwritten, that dynamic pricing was calculated fairly, or that payment was released only after the correct exit conditions. Lot owners also face no-shows, unreliable users, opaque disputes, and limited tools for verifiable settlement.
 
@@ -34,6 +43,14 @@ The result is a trust gap:
 ParkChain Nexus turns parking into an auditable trust workflow instead of a private-database promise.
 
 ## Solution Overview
+
+<img src="./docs/assets/section-spark.svg" alt="">
+
+<p align="center">
+  <img src="./frontend/src/assets/branding-hero.jpg" alt="ParkChain Nexus branding visual" width="31%">
+  <img src="./frontend/src/assets/ai-pricing.jpg" alt="AI pricing visual" width="31%">
+  <img src="./frontend/src/assets/ev-charging.jpg" alt="EV charging and green credits visual" width="31%">
+</p>
 
 ParkChain Nexus is a hybrid smart parking platform where the backend handles speed and usability while blockchain handles proof, trust, and settlement.
 
@@ -54,6 +71,8 @@ Along the way, ParkChain Nexus was updated with practical demo safeguards:
 - Timeline events are de-duplicated when imported first from MetaMask and later synced from chain logs.
 
 ## Feature Set
+
+<img src="./docs/assets/section-spark.svg" alt="">
 
 | Feature | What It Demonstrates | User Benefit |
 |---|---|---|
@@ -77,6 +96,8 @@ Along the way, ParkChain Nexus was updated with practical demo safeguards:
 
 ## Technology Stack
 
+<img src="./docs/assets/section-spark.svg" alt="">
+
 | Layer | Technology |
 |---|---|
 | Frontend | React, Vite, TypeScript, TailwindCSS |
@@ -95,6 +116,8 @@ Along the way, ParkChain Nexus was updated with practical demo safeguards:
 | Testing | Pytest, FastAPI TestClient, Hardhat tests |
 
 ## Architecture Diagram
+
+<img src="./docs/assets/section-spark.svg" alt="">
 
 ```mermaid
 flowchart LR
@@ -162,16 +185,13 @@ sequenceDiagram
 
 ## Animated Demo Layer
 
+<img src="./docs/assets/section-spark.svg" alt="">
+
 ParkChain Nexus is designed to feel alive during a presentation. The frontend includes an animated blockchain visualizer that turns invisible blockchain mechanics into a clear motion story:
 
-```mermaid
-flowchart LR
-    A[Driver Action] --> B[Mempool Pending]
-    B --> C[Block Assembly]
-    C --> D[Confirmed Block]
-    D --> E[Session Timeline]
-    E --> F[Analytics]
-```
+<p align="center">
+  <img src="./docs/assets/chain-pulse.svg" alt="Animated blockchain pulse showing mempool, block assembly, confirmed block, and chain timeline">
+</p>
 
 The visualizer explains:
 
@@ -182,6 +202,41 @@ The visualizer explains:
 - It contributes to analytics and operational insight.
 
 This makes the blockchain layer visible to non-technical audiences instead of hiding it behind a final status message.
+
+## Demo Media
+
+The README already includes animated motion assets. After recording your final demo, place the recording at:
+
+```text
+docs/assets/parkchain-demo.mp4
+```
+
+or:
+
+```text
+docs/assets/parkchain-demo.gif
+```
+
+Recommended README embed after adding the file:
+
+```html
+<video src="./docs/assets/parkchain-demo.mp4" controls width="900"></video>
+```
+
+Current motion preview:
+
+<p align="center">
+  <img src="./docs/assets/chain-pulse.svg" alt="Animated ParkChain demo motion preview">
+</p>
+
+Suggested recording sequence:
+
+1. Login with MetaMask.
+2. Reserve a slot on-chain.
+3. Show the visualizer moving the reservation into a confirmed event.
+4. Confirm entry and run AI pricing.
+5. Use Get demo PARK, approve, and deposit escrow.
+6. Confirm exit and show the immutable timeline.
 
 ## Smart Contracts
 

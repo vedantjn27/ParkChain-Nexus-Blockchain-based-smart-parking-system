@@ -1,0 +1,71 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#092033"/>
+      <stop offset="100%" stop-color="#04111f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18bfff"/>
+      <stop offset="55%" stop-color="#41f2a9"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.09 0 0 0 0 0.75 0 0 0 0 1 0 0 0 0.55 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+    <style>
+      .title { font: 800 76px Inter, Segoe UI, Arial, sans-serif; letter-spacing: 1px; }
+      .tag { font: 600 24px Inter, Segoe UI, Arial, sans-serif; }
+      .micro { font: 600 15px Inter, Segoe UI, Arial, sans-serif; letter-spacing: 2px; }
+      .flow { animation: dash 3s linear infinite; stroke-dasharray: 14 18; }
+      .pulse { transform-origin: center; animation: pulse 2.6s ease-in-out infinite; }
+      .float { animation: float 4s ease-in-out infinite; }
+      .float2 { animation: float 4.8s ease-in-out infinite reverse; }
+      .scan { animation: scan 5s linear infinite; }
+      @keyframes dash { to { stroke-dashoffset: -64; } }
+      @keyframes pulse { 0%,100% { opacity: .55; transform: scale(.98); } 50% { opacity: 1; transform: scale(1.05); } }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      @keyframes scan { 0% { transform: translateX(-260px); opacity: 0; } 15%,70% { opacity: .65; } 100% { transform: translateX(1280px); opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="1280" height="360" rx="28" fill="url(#bg)"/>
+  <g opacity=".26">
+    <path d="M0 290 C170 230, 260 340, 420 275 S710 220, 850 285 S1110 350, 1280 250" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M0 95 C190 145, 300 30, 480 105 S780 165, 960 92 S1160 25, 1280 94" stroke="#22c55e" stroke-width="2"/>
+  </g>
+
+  <g class="scan">
+    <rect x="0" y="0" width="180" height="360" fill="url(#accent)" opacity=".08"/>
+  </g>
+
+  <g transform="translate(74 76)">
+    <text class="micro" fill="#7dd3fc">BLOCKCHAIN VERIFIED SMART PARKING</text>
+    <text class="title" x="0" y="92" fill="#f8fafc">ParkChain Nexus</text>
+    <text class="tag" x="2" y="138" fill="#bae6fd">Every Spot. Every Second. Provably Honest.</text>
+    <text class="tag" x="2" y="183" fill="#d9f99d">AI pricing · ParkCoin escrow · Trust SBT · Green credits · Live chain pulse</text>
+  </g>
+
+  <g transform="translate(840 60)">
+    <path class="flow" d="M0 112 C85 35, 175 200, 260 112" stroke="url(#accent)" stroke-width="5" fill="none" filter="url(#glow)"/>
+    <g class="float">
+      <rect x="2" y="78" width="120" height="70" rx="18" fill="#071827" stroke="#38bdf8" stroke-width="2"/>
+      <text x="26" y="119" fill="#e0f2fe" font-family="Inter, Arial" font-size="16" font-weight="700">Reserve</text>
+    </g>
+    <g class="pulse">
+      <circle cx="164" cy="112" r="44" fill="#0f766e" opacity=".45"/>
+      <circle cx="164" cy="112" r="28" fill="#14b8a6"/>
+      <text x="145" y="118" fill="#ecfeff" font-family="Inter, Arial" font-size="16" font-weight="800">AI</text>
+    </g>
+    <g class="float2">
+      <rect x="220" y="78" width="120" height="70" rx="18" fill="#071827" stroke="#84cc16" stroke-width="2"/>
+      <text x="250" y="119" fill="#ecfccb" font-family="Inter, Arial" font-size="16" font-weight="700">Settle</text>
+    </g>
+    <g transform="translate(58 202)">
+      <rect width="230" height="54" rx="15" fill="#020617" stroke="#facc15" stroke-width="2" opacity=".9"/>
+      <text x="30" y="34" fill="#fef3c7" font-family="Inter, Arial" font-size="15" font-weight="700">Proof before payment</text>
+    </g>
+  </g>
+</svg>

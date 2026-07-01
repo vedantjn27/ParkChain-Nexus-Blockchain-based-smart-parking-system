@@ -1,0 +1,17 @@
+<svg width="760" height="18" viewBox="0 0 760 18" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop stop-color="#38bdf8"/>
+      <stop offset=".45" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <style>
+      .line { stroke-dasharray: 22 18; animation: dash 2.4s linear infinite; }
+      .spark { animation: spark 2.4s ease-in-out infinite; }
+      @keyframes dash { to { stroke-dashoffset: -80; } }
+      @keyframes spark { 0%,100% { transform: translateX(0); opacity: .25; } 50% { transform: translateX(690px); opacity: 1; } }
+    </style>
+  </defs>
+  <path class="line" d="M8 9 H742" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+  <circle class="spark" cx="28" cy="9" r="7" fill="#e0f2fe"/>
+</svg>
