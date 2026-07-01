@@ -396,4 +396,6 @@ This keeps API, UI, and smart-contract ownership clean and makes later deploymen
 
 ---
 
-Proof that the smartest journeys begin before the engine starts.
+<h2 align="center">
+  <strong>Proof that the smartest journeys begin before the engine starts.</strong>
+</h2>
