@@ -5,7 +5,7 @@ This document maps the repository so contributors, evaluators, and frontend/back
 ## Root
 
 ```text
-ParkChain Nexus - Blockchain based smart parking system/
+ParkChain Nexus - Blockchain based smart parking system/ 
   README.md
   SETUP_GUIDE.md
   FOLDER_STRUCTURE.md
